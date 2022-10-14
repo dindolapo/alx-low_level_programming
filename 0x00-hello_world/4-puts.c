@@ -5,13 +5,12 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-  /*initializing string*/
-  char str1[]="Programming is like building a multilingual puzzle\n";
+/*initializing string*/
+char str1[] = "\"Programming is like building a multilingual puzzle\n";
 
-  /*writing to stdout*/
-  puts(str1);
-  
-  return (0);
+/*writing to stdout*/
+puts(str1);
+return (0);
 }
