@@ -1,0 +1,2 @@
+It seems we are starting our learning with the hello world program. Below are the different program-task description.
+0-preprocessor - a script that runs a C file through a preprocessor and saves the result into another file.
