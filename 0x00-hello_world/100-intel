@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel -m32 -o main.s $CFILE
+gcc -S -masm=intel -m32 -o 100-main.s $CFILE
