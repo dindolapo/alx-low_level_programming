@@ -1,0 +1,1 @@
+0-postive_negative script choose a number at random and says whether the number is postive or negative in the ouput display.
