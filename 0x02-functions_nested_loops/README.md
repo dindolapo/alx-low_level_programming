@@ -1,0 +1,1 @@
+0-putchar is a simple script that prints _putchar.
