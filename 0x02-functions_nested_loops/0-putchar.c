@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	fwrite("_putchar\n", 12, 1, stdout);
+	fwrite("_putchar\n", 9, 1, stdout);
 	return (0);
 }
