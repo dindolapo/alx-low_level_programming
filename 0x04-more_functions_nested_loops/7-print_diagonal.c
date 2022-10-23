@@ -4,8 +4,6 @@
  * print_diagonal - draws a diagonal line on the terminal and it's length
  * is determined by the input
  * @n: input integer
- * @j: first loop integer
- * @k: second loop integer
  * Return: void
  */
 void print_diagonal(int n)

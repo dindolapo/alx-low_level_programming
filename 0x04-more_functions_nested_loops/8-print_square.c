@@ -4,8 +4,6 @@
  * print_square - prints a square followed by a new line on the terminal and
  * it's length is determined by the input
  * @size: input integer
- * @i: first loop integer
- * @k: second loop integer
  * Return: void
  */
 void print_square(int size)
