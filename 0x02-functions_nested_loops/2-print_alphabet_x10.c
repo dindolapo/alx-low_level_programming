@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphaber_x10 - check code
+ * print_alphabet_x10 - check code
  *
  * Return: void
  */
