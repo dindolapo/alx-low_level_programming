@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*
- *checks for all alphabets
- *
- *Returns 1 if true
+/**
+ * _isalpha - check for alphabetic character
+ * @c: input integer
+ * Return: 1 for alphabets, lower or uppercase and 0 otherwise
  */
 int _isalpha(int c)
 {
@@ -15,25 +15,4 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-}
-
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int r;
-
-	r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('o');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
 }
