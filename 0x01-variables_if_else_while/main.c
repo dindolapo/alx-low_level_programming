@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
 /**
  * main - Entry point
@@ -10,13 +9,5 @@
  */
 int main(void)
 {
-	int i = 96;
-
-	while (i <= 122)
-	{
-		putchar(i);
-		i++;
-	}
-	putchar('\n');
 	return (0);
 }
