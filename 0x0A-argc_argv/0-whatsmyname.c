@@ -3,7 +3,8 @@
 
 /**
  * main - check the code
- *
+ * @argc: function arg
+ * @argv: function arg
  * Return: Always 0 for success
  */
 int main(int argc, char **argv)
