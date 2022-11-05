@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -9,6 +10,13 @@
  */
 int main(int argc, char **argv)
 {
-	printf("%s\n", argv[0]);
+	int i;
+	char *storage;
+
+	storage = argv[0];
+	for (i = 0; storage[i] != '\0'; i++)
+		_putchar(storage[i]);
+
+	_putchar('\n');
 	return (0);
 }
