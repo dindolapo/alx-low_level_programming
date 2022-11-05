@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -9,13 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	char *storage;
+	(void)argc;
 
-	storage = argv[0];
-	for (i = 0; storage[i] != '\0'; i++)
-		_putchar(storage[i]);
-
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 	return (0);
 }
