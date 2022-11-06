@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - check the code
@@ -8,6 +9,9 @@
  */
 int main(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	(void)**argv;
+
+	printf("%d\n", argc - 1);
+
 	return (0);
 }
