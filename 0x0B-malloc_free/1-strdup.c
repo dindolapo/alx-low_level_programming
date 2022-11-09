@@ -4,8 +4,8 @@
 #include <limits.h>
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory containing a
- * string
+ * _strdup - returns a pointer to a newly allocated space in memory containing
+ * a string
  * @str: argument for input array
  * Return: NULL if str = NULL and NULL if memory is insufficient
  */
