@@ -4,7 +4,8 @@
 
 /**
  * main - check the code
- *
+ * @argc: argument count
+ * @argv: argument vector
  * Return: Always 0 for success
  */
 int main(int argc, char **argv)
