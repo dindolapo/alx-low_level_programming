@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
 			}
 		}
 	printf("%d\n", sum);
+	return (0);
 	}
 	else
 	{
 		printf("0\n");
 		return (1);
 	}
-	return (0);
 }
