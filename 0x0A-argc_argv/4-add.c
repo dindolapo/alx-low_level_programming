@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -9,30 +10,27 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum;
+	int total, i, j;
+	int num;
 
-	sum = 0;
+	total = 0;
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 1; argv[i]; i++)
 		{
-			if (*argv[i] >= 'a' && *argv[i] <= 'z')
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (argv[i][j] < '0' || argv[i][j] > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				sum += atoi(argv[i]);
-			}
+
+			num = atoi(argv[i]);
+			total += num;
 		}
-	printf("%d\n", sum);
+	}
+	printf("%d\n", total);
 	return (0);
-	}
-	else
-	{
-		printf("0\n");
-		return (1);
-	}
 }
