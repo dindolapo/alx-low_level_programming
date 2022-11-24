@@ -17,35 +17,38 @@ void print_all(const char * const format, ...)
 
 	va_start(pa, format);
 
-	while (format[i] != '\0')
+	if (format)
 	{
-		switch (format[i])
+		while (format[i] != '\0')
 		{
-		case 'c':
-			printf("%c%s", va_arg(pa, int), seperator);
-			break;
+			switch (format[i])
+			{
+			case 'c':
+				printf("%c%s", va_arg(pa, int), seperator);
+				break;
 
-		case 'f':
-			printf("%f%s", va_arg(pa, double), seperator);
-			break;
+			case 'f':
+				printf("%f%s", va_arg(pa, double), seperator);
+				break;
 
-		case 'i':
-			printf("%d%s", va_arg(pa, int), seperator);
-			break;
+			case 'i':
+				printf("%d%s", va_arg(pa, int), seperator);
+				break;
 
-		case 's':
-			str = va_arg(pa, char *);
-			if (!str)
-				printf("nil");
+			case 's':
+				str = va_arg(pa, char *);
+				if (!str)
+					printf("nil");
 
-			printf("%s", str);
-			break;
+				printf("%s", str);
+				break;
 
-		default:
+			default:
+				i++;
+				continue;
+			}
 			i++;
-			continue;
 		}
-		i++;
 	}
 	printf("\n");
 	va_end(pa);
