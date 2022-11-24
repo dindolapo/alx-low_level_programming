@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 	char *str = "";
 	int i = 0;
-	char *seperator = ", ";
+	char *seperator = "";
 
 	va_list pa;
 
@@ -23,25 +23,26 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				printf("%c%s", va_arg(pa, int), seperator);
+				printf("%s%c", seperator, va_arg(pa, int));
 				break;
 			case 'f':
-				printf("%f%s", va_arg(pa, double), seperator);
+				printf("%s%f", seperator, va_arg(pa, double));
 				break;
 			case 'i':
-				printf("%d%s", va_arg(pa, int), seperator);
+				printf("%s%d", seperator, va_arg(pa, int));
 				break;
 			case 's':
 				str = va_arg(pa, char *);
 				if (!str)
 					printf("(nil)");
 
-				printf("%s", str);
+				printf("%s%s", seperator, str);
 				break;
 			default:
 				i++;
 				continue;
 			}
+			seperator = ", ";
 			i++;
 		}
 	}
