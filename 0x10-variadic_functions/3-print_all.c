@@ -11,6 +11,7 @@ void print_all(const char * const format, ...)
 	char *str = "";
 	int i = 0;
 	char *seperator = ", ";
+
 	va_list pa;
 
 	va_start(pa, format);
@@ -33,7 +34,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(pa, char *);
 				if (!str)
-					printf("nil");
+					printf("(nil)");
 
 				printf("%s", str);
 				break;
